@@ -1,0 +1,64 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="col-md-8">
+            <mat-card>
+                <div class="example-container">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title">Add Product</h4>
+                        <p class="card-category">Add your product here</p>
+                    </div>
+                    <form [formGroup]="options">
+                        <h4>Parents Details</h4>
+            
+                        <mat-form-field appearance="fill" [floatLabel]="floatLabelControl.value">
+                            <mat-label>Both a label and a placeholder</mat-label>
+                            <input matInput placeholder="Simple placeholder">
+                        </mat-form-field>
+            
+                        <mat-form-field appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
+                            [floatLabel]="floatLabelControl.value">
+                            <mat-select required>
+                                <mat-option>-- None --</mat-option>
+                                <mat-option value="father">Father</mat-option>
+                                <mat-option value="mother">Mother</mat-option>
+                                <mat-option value="mother">Guardian of the child</mat-option>
+                            </mat-select>
+                            <mat-label>
+                                <mat-icon>favorite</mat-icon> Relationship
+                            </mat-label>
+                        </mat-form-field>
+                        <p>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Fill form field</mat-label>
+                                <input matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                            </mat-form-field>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Fill form field</mat-label>
+                                <input matInput placeholder="Placeholder">
+                                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                                <mat-hint>Hint</mat-hint>
+                            </mat-form-field>
+                        </p>
+                        <div class="row" >
+                            <div class="col-md-8">
+                              <div >
+                                <input type="file" formControlName="image" id="image" />
+                              </div>
+                            </div>
+                          </div>
+                        <mat-checkbox [formControl]="hideRequiredControl">Hide required marker</mat-checkbox>
+                    </form>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+</div>

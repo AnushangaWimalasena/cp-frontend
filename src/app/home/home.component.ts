@@ -10,6 +10,7 @@ import {
   // ...
 } from '@angular/animations';
 import { switchMap, catchError } from 'rxjs/operators'
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -21,10 +22,10 @@ import { switchMap, catchError } from 'rxjs/operators'
       state('in', style({ transform: 'translateX(0)' })),
       transition('void => *', [
         style({ transform: 'translateX(-100%)' }),
-        animate(200)
+        animate(50)
       ]),
       transition('* => void', [
-        animate(600, style({ transform: 'translateX(100%)' }))
+        animate(1000, style({ transform: 'translateX(100%)' }))
       ])
     ])
   ]
@@ -41,7 +42,7 @@ export class HomeComponent implements OnInit {
     '../assets/nathan-anderson-GM5Yn5XRVqA-unsplash.jpg',
     '../assets/simon-rae-jJYlr6H1ClM-unsplash.jpg' ]
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
     this.imagesUrl.forEach((x, index) => {
@@ -60,6 +61,7 @@ export class HomeComponent implements OnInit {
 
   loadForm():void{
     console.log('press')
+    this.route.navigate(['/home/details-vid-upload'])
   }
 
 }
