@@ -1,0 +1,11 @@
+
+<ng-container *ngFor="let i of [0,1,2,3]">
+	<div *ngIf="i==index && !loading" [@flyInOut] [ngClass]="'background div'+i">
+	</div>
+</ng-container>
+<div *ngIf="loading" class="background div0"></div>
+<br>
+<br>
+<br>
+<br>
+<button type="button" (click)="loadForm()">Let's diagnosis</button>
