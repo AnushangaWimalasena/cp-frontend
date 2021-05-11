@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
@@ -12,7 +13,9 @@ export class DetailsFromAndImageUploadComponent implements OnInit {
   hideRequiredControl = new FormControl(false);
   floatLabelControl = new FormControl('auto');
 
-  constructor(fb: FormBuilder) {
+  fileName = ''
+
+  constructor(fb: FormBuilder, private http: HttpClient) {
     this.options = fb.group({
       hideRequired: this.hideRequiredControl,
       floatLabel: this.floatLabelControl,
@@ -21,5 +24,23 @@ export class DetailsFromAndImageUploadComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onFileSelected(event:any) {
+
+    const file:File = event.target.files[0];
+
+    if (file) {
+
+        this.fileName = file.name;
+
+        const formData = new FormData();
+
+        formData.append("video", file);
+
+        const upload$ = this.http.post("http://127.0.0.1:5000/video-upload", formData);
+
+        upload$.subscribe();
+    }
+}
 
 }

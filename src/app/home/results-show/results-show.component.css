@@ -1,0 +1,29 @@
+.main-container {
+  position: relative;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  background-size: cover;
+  padding-bottom: 50px;
+  overflow: hidden;
+  background-image: url("../../../assets/danielle-macinnes-MPpIqkoi7hQ-unsplash.jpg");
+}
+
+.inner{
+    overflow: hidden;
+    margin: auto;
+}
+
+.example-card {
+  max-width: fit-content;
+  min-width: 500px;
+  justify-content: center;
+  margin: auto;
+  background-color: rgb(224, 252, 253);
+}
+
+.child {
+    float: left;
+    margin-left: 5%;
+  }

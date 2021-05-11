@@ -18,12 +18,17 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTabsModule } from '@angular/material/tabs';
 import {MatDialogModule} from '@angular/material/dialog';
 
+import { HttpClientModule } from '@angular/common/http';
+import { ResultsShowComponent } from './results-show/results-show.component';
+
 @NgModule({
   declarations: [
     HomeComponent,
-    DetailsFromAndImageUploadComponent
+    DetailsFromAndImageUploadComponent,
+    ResultsShowComponent
   ],
   imports: [
+    HttpClientModule,
     CommonModule,
     FormsModule, 
     ReactiveFormsModule,
