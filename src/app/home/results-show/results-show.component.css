@@ -10,9 +10,9 @@
   background-image: url("../../../assets/danielle-macinnes-MPpIqkoi7hQ-unsplash.jpg");
 }
 
-.inner{
-    overflow: hidden;
-    margin: auto;
+.inner {
+  overflow: hidden;
+  margin: auto;
 }
 
 .example-card {
@@ -24,6 +24,6 @@
 }
 
 .child {
-    float: left;
-    margin-left: 5%;
-  }
+  float: left;
+  margin-left: 5%;
+}

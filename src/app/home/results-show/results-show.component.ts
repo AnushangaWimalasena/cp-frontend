@@ -10,7 +10,7 @@ declare const CanvasJS: any;
 })
 export class ResultsShowComponent implements OnInit {
 
-  parentName = 'Kanthi'
+  parentName = 'Marry'
   InfantAge = '45'
   sex = ''
 
@@ -21,44 +21,20 @@ export class ResultsShowComponent implements OnInit {
   }
 
   chartDraw(){
-    // let chart = new CanvasJS.Chart("chartContainer", {
-    //   animationEnabled: true,
-    //   exportEnabled: true,
-    //   title: {
-    //     text: "Basic Column Chart in Angular"
-    //   },
-    //   data: [{
-    //     type: "column",
-    //     dataPoints: [
-    //       { y: 71, label: "Apple" },
-    //       { y: 55, label: "Mango" },
-    //       { y: 50, label: "Orange" },
-    //       { y: 65, label: "Banana" },
-    //       { y: 95, label: "Pineapple" },
-    //       { y: 68, label: "Pears" },
-    //       { y: 28, label: "Grapes" },
-    //       { y: 34, label: "Lychee" },
-    //       { y: 14, label: "Jackfruit" }
-    //     ]
-    //   }]
-    // });
-      
-    // chart.render();
-
     var chart = new CanvasJS.Chart("chartContainer", {
       animationEnabled: true,
       title:{
-        text: "Crude Oil Reserves vs Production, 2016"
+        text: "Movements of Infants"
       },	
       axisY: {
-        title: "Billions of Barrels",
+        title: "Your infant",
         titleFontColor: "#4F81BC",
         lineColor: "#4F81BC",
         labelFontColor: "#4F81BC",
         tickColor: "#4F81BC"
       },
       axisY2: {
-        title: "Millions of Barrels/day",
+        title: "Healthy Infant's avarage",
         titleFontColor: "#C0504E",
         lineColor: "#C0504E",
         labelFontColor: "#C0504E",
@@ -74,30 +50,32 @@ export class ResultsShowComponent implements OnInit {
       data: [{
         type: "column",
         name: "Proven Oil Reserves (bn)",
-        legendText: "Proven Oil Reserves",
+        legendText: "Your infant",
         showInLegend: true, 
         dataPoints:[
-          { label: "Saudi", y: 266.21 },
-          { label: "Venezuela", y: 302.25 },
-          { label: "Iran", y: 157.20 },
-          { label: "Iraq", y: 148.77 },
-          { label: "Kuwait", y: 101.50 },
-          { label: "UAE", y: 97.8 }
+          { label: "abnormal_fidgety", y: 266.21 },
+          { label: "chaotic_gm", y: 302.25 },
+          { label: "cramped_synchronised", y: 157.20 },
+          { label: "no_movement", y: 148.77 },
+          { label: "normal_fidgety", y: 101.50 },
+          { label: "normal_writhing", y: 97.8 },
+          { label: "poor_repertoire", y: 97.8 }
         ]
       },
       {
         type: "column",	
         name: "Oil Production (million/day)",
-        legendText: "Oil Production",
+        legendText: "Healthy infant",
         axisYType: "secondary",
         showInLegend: true,
         dataPoints:[
-          { label: "Saudi", y: 10.46 },
-          { label: "Venezuela", y: 2.27 },
-          { label: "Iran", y: 3.99 },
-          { label: "Iraq", y: 4.45 },
-          { label: "Kuwait", y: 2.92 },
-          { label: "UAE", y: 3.1 }
+          { label: "abnormal_fidgety", y: 10.46 },
+          { label: "chaotic_gm", y: 2.27 },
+          { label: "cramped_synchronised", y: 3.99 },
+          { label: "no_movement", y: 4.45 },
+          { label: "normal_fidgety", y: 2.92 },
+          { label: "normal_writhing", y: 3.1 },
+          { label: "poor_repertoire", y: 97.8 }
         ]
       }]
     });

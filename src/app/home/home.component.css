@@ -21,10 +21,37 @@ section {
   background-image: url("/assets/jessica-rockowitz-5NLCaz2wJXE-unsplash.jpg");
 }
 .div3 {
+  
   background-image: url("/assets/nathan-anderson-GM5Yn5XRVqA-unsplash.jpg");
 }
 .div0 {
   background-image: url("/assets/simon-rae-jJYlr6H1ClM-unsplash.jpg");
 }
 
+#main-container{
+  padding-top: 80px;
+}
 
+.inner {
+  overflow: hidden;
+  margin: auto;
+}
+
+.child {
+  float: left;
+  margin-left: 5%;
+  width: 40%;
+}
+
+.mat-card{
+  background-color: rgba(10, 1, 57, 0.8);
+  color: rgb(216, 218, 218);
+}
+
+
+.button{
+  color: aliceblue;
+  font-size: 35px;
+  margin: auto;
+  padding: 15px;
+}

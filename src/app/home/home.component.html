@@ -1,11 +1,65 @@
-
-<ng-container *ngFor="let i of [0,1,2,3]">
-	<div *ngIf="i==index && !loading" [@flyInOut] [ngClass]="'background div'+i">
+<div>
+	<div>
+		<ng-container *ngFor="let i of [0,1,2,3]">
+			<div *ngIf="i==index && !loading" [@flyInOut] [ngClass]="'background div'+i">
+			</div>
+		</ng-container>
+		<div *ngIf="loading" class="background div0"></div>
 	</div>
-</ng-container>
-<div *ngIf="loading" class="background div0"></div>
-<br>
-<br>
-<br>
-<br>
-<button mat-raised-button color="accent" (click)="loadForm()">Let's diagnosis</button>
+	<div id="main-container">
+		<div class="inner">
+			<div class="child">
+				<mat-card class="example-card mat-card">
+					<mat-card-header>
+						<mat-card-title><b>What is Cerebral Palsy...</b></mat-card-title>
+					</mat-card-header>
+					<mat-card-content>
+						<p>
+							<i>Cerebral palsy (CP) is a group of disorders that affect a person’s ability to move and maintain balance and posture. CP is the most common motor disability in childhood. Cerebral means having to do with the brain. Palsy means weakness or problems with using the muscles. CP is caused by abnormal brain development or damage to the developing brain that affects a person’s ability to control his or her muscles.
+							</i><br>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<b><i>- CDC</i></b>
+						</p>
+					</mat-card-content>
+					<br>
+					<br>
+					<mat-card-header>
+						<mat-card-title><b>Why is Early Detection Important....</b></mat-card-title>
+					</mat-card-header>
+					<mat-card-content>
+						<p>
+							<b><i>Cerebral palsy should be detected as soon as possible because,</i></b><br>
+
+							&nbsp; &nbsp;&nbsp;&nbsp; 01. Cerebral palsy specific early intervention using intense, motor learning task-specific approaches plus environmental enrichment optimizes natural plasticity and improves children’s motor and cognitive outcomes. <br>
+							&nbsp; &nbsp;&nbsp;&nbsp; 02. Early, regular monitoring and treatment for the known musculoskeletal complications of cerebral palsy can prevent the onset of hip dislocation, scoliosis and contracture. <br>
+							&nbsp; &nbsp;&nbsp;&nbsp; 03. Parents experience more depression and stress when they are dissatisfied with the diagnostic process. Families prefer early diagnosis, followed by early intervention and parent-to-parent support. <br>
+							&nbsp; &nbsp;&nbsp;<b><i> It is not good practice to offer conservative “wait and see” monitoring, when clear clinical diagnostic indicators exist, especially in contexts where the absence of a diagnostic label precludes the infant from accessing the recommended early intervention. </i></b>
+						</p>
+					</mat-card-content>
+				</mat-card>
+			</div>
+			<div class="child">
+				<mat-card class="example-card mat-card">
+					<mat-card-header>
+						<mat-card-title><b>What is Cerebral Palsy...</b></mat-card-title>
+					</mat-card-header>
+					<mat-card-content>
+						<p>
+							<b><i> The biggest challenge with CP identification and treatment is the Limited availability of qualified medical practitioners.
+							</i></b>
+						</p>
+						<h2>
+							 <b><i> But do not worry. From Cerebral Center, We here to help you...</i></b>  😊😊
+						</h2>
+					</mat-card-content>
+					<br>
+					<br>
+					<div style="margin-left: 200px;">
+						<button class="button" mat-raised-button color="accent" (click)="loadForm()">Let's diagnosis</button>
+					</div>
+				</mat-card>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
