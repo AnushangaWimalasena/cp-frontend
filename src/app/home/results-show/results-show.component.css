@@ -17,7 +17,7 @@
 
 .example-card {
   max-width: fit-content;
-  min-width: 500px;
+  min-width: 600px;
   justify-content: center;
   margin: auto;
   background-color: rgb(224, 252, 253);

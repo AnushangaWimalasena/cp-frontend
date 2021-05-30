@@ -53,13 +53,13 @@ export class ResultsShowComponent implements OnInit {
         legendText: "Your infant",
         showInLegend: true, 
         dataPoints:[
-          { label: "abnormal_fidgety", y: 266.21 },
-          { label: "chaotic_gm", y: 302.25 },
-          { label: "cramped_synchronised", y: 157.20 },
-          { label: "no_movement", y: 148.77 },
-          { label: "normal_fidgety", y: 101.50 },
-          { label: "normal_writhing", y: 97.8 },
-          { label: "poor_repertoire", y: 97.8 }
+          { label: "1", y: 56.21 },
+          { label: "2", y: 22.25 },
+          { label: "3", y: 17.20 },
+          { label: "4", y: 38.77 },
+          { label: "5", y: 1.50 },
+          { label: "6", y: 7.8 },
+          { label: "7", y: 7.8 }
         ]
       },
       {
@@ -69,13 +69,13 @@ export class ResultsShowComponent implements OnInit {
         axisYType: "secondary",
         showInLegend: true,
         dataPoints:[
-          { label: "abnormal_fidgety", y: 10.46 },
-          { label: "chaotic_gm", y: 2.27 },
-          { label: "cramped_synchronised", y: 3.99 },
-          { label: "no_movement", y: 4.45 },
-          { label: "normal_fidgety", y: 2.92 },
-          { label: "normal_writhing", y: 3.1 },
-          { label: "poor_repertoire", y: 97.8 }
+          { label: "1", y: 1.46 },
+          { label: "2", y: 2.27 },
+          { label: "3", y: 3.99 },
+          { label: "4", y: 54.45 },
+          { label: "5", y: 22.92 },
+          { label: "6", y: 23.1 },
+          { label: "7", y: 0.8 }
         ]
       }]
     });
