@@ -10,16 +10,16 @@
             <mat-card-subtitle>Parents Details</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content class="example-container">
-            <form [formGroup]="options">
+            <form [formGroup]="form_data">
                 <mat-form-field appearance="fill">
                     <mat-label>Name</mat-label>
-                    <input matInput placeholder="Placeholder">
+                    <input matInput placeholder="Placeholder" formControlName="name">
                     <mat-hint>Full name with Initials</mat-hint>
                 </mat-form-field>
 
                 <mat-form-field appearance="fill" [hideRequiredMarker]="hideRequiredControl.value"
                     [floatLabel]="floatLabelControl.value">
-                    <mat-select required>
+                    <mat-select required formControlName="relationship">
                         <mat-option value="father">Father</mat-option>
                         <mat-option value="mother">Mother</mat-option>
                         <mat-option value="mother">Guardian of the child</mat-option>
@@ -31,12 +31,12 @@
                 <p>
                     <mat-form-field appearance="fill">
                         <mat-label>Infants age</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input matInput placeholder="" formControlName="age">
                         <mat-hint>Ex :-If infant's age 45 weeks, then enter 45 </mat-hint>
                     </mat-form-field>
                     <mat-form-field appearance="fill">
                         <mat-label>Sex</mat-label>
-                        <input matInput placeholder="Placeholder">
+                        <input matInput placeholder="" formControlName="sex">
                         <mat-hint>Male, Female or Other</mat-hint>
                     </mat-form-field>
                 </p>
@@ -54,7 +54,7 @@
                 </div>
                 <mat-checkbox [formControl]="hideRequiredControl">I hereby agree to allow this video to be used for the research and evaluations regarding Cerebral Palsy</mat-checkbox>
             </form>
-            <button class="button" mat-raised-button color="accent" >Let's diagnosis</button>
+            <button class="button" mat-raised-button color="accent" (click)="upload_files()" >Let's diagnosis</button>
 
         </mat-card-content>
     </mat-card>
